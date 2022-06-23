@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Hardhat 
+./hardhat-tutorial/node_modules
+./hardhat-tutorial/package-lock.json
