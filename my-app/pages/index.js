@@ -57,13 +57,22 @@ export default function Home() {
 
       const tx = null
       if (saleType == "presale") {
-        tx = await NFTContract.presaleMint({
-          value: utils.parseEther("0.01"),
-        })
+        try {
+          tx = await NFTContract.presaleMint({
+            value: utils.parseEther("0.01"),
+          })
+        } catch (err) {
+          window.alert(err.message)
+        }
+        
       } else if (saleType == "public") {
-        tx = await NFTContract.mint({
-          value: utils.parseEther("0.01"),
-        })
+        try {
+          tx = await NFTContract.mint({
+            value: utils.parseEther("0.01"),
+          })
+        } catch (err) {
+          window.alert(err.message)
+        }
       } else {
         window.alert("Wrong sale type!")
         return false;
