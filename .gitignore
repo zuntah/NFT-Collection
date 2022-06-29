@@ -104,5 +104,8 @@ dist
 .tern-port
 
 # Hardhat 
-./hardhat-tutorial/node_modules
-./hardhat-tutorial/package-lock.json
+/hardhat-tutorial/node_modules/
+/hardhat-tutorial/package-lock.json
+/hardhat-tutorial/artifacts/
+/hardhat-tutorial/cache/
+/hardhat-tutorial/.env

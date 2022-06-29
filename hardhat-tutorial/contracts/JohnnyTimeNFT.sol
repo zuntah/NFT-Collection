@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./IWhitelist.sol";
 
-contract JohnnyTime is ERC721Enumerable, Ownable {
+contract JohnnyTimeNFT is ERC721Enumerable, Ownable {
     
     // General Params
     string baseTokenURI;
