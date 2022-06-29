@@ -250,9 +250,9 @@ export default function Home() {
         <div>
           <div className={styles.description}>
             Presale has started!!! If your address is whitelisted, Mint a
-            Crypto Dev 🥳
+            JohnnyTime NFT 🥳
           </div>
-          <button className={styles.button} onClick={presaleMint}>
+          <button className={styles.button} onClick={() => mint("presale")}>
             Presale Mint 🚀
           </button>
         </div>
@@ -261,7 +261,7 @@ export default function Home() {
 
     if (presaleStarted && presaleEnded) {
       return (
-        <button className={styles.button} onClick={publicMint}>
+        <button className={styles.button} onClick={() => mint("public")}>
           Public Mint 🚀
         </button>
       );
@@ -273,7 +273,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Crypto Devs</title>
+        <title>JohnnyTime NFTs</title>
         <meta name="description" content="Whitelist-Dapp" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
